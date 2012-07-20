@@ -1,0 +1,6 @@
+Put those files somewhere on your web server and open index.html in browser.
+
+Note that program.pl is a CGI perl script and shall be executed as such. It also
+requires JSON::XS module to work correctly.
+
+
