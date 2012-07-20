@@ -1,0 +1,65 @@
+<!html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Psychopath test</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="keys.css"  type="text/css" />
+<script type="text/javascript" src="default.js"></script>
+</head>
+<body>
+
+<div id='title'>
+	<h1>Psychopath test</h1>
+</div>
+
+<div id='result' class="hidden">
+	<p>Test is over. Your results are:</p>
+	<p>
+	Correct answers: <span id="correct-answers" class="span-info"></span><br>
+	Average delay for good words: <span id="delay-good" class="span-info"></span><br>
+	Average delay for bad words: <span id="delay-bad" class="span-info"></span><br>
+	False starts: <span id="false-starts" class="span-info"></span><br>
+	
+	</p>
+</div>
+
+<div id='introduction'>
+	<p>This page lets you find out if you're a psychopath or not using the test described here: <a href="http://www.ncbi.nlm.nih.gov/pubmed/1946892">http://www.ncbi.nlm.nih.gov/pubmed/1946892</a></p>
+</div>
+
+<div id='start'>
+	<p>Start the test:
+<!--		<a href="#" class="button" onclick="download(5); return false;">5 words</a>
+		<a href="#" class="button" onclick="download(10); return false;">10 words</a> -->
+		<a href="#" class="button" onclick="download(25); return false;">25 words</a>
+		<a href="#" class="button" onclick="download(50); return false;">50 words</a>
+		<a href="#" class="button" onclick="download(100); return false;">100 words</a>
+	</p>
+</div>
+
+<div id='loading' class="hidden">
+	<p>Loading...</p>
+</div>
+
+<div id='error' class="hidden">
+	<p>Error: <span id="error-label" class="span-info">unknown error</span></p>
+</div>
+
+<div id='test' class="hidden">
+	<div class="box">
+		<div id="hint-correct" class="box-hint correct hidden">Correct!</div>
+		<div id="hint-wrong" class="box-hint wrong hidden">Wrong!</div>
+		
+		<p>
+		<small>Press <kbd class="light"> SPACE </kbd> when you see a word pop up.</small>
+		<br>
+		<small>Do not do anything if it's not a word.</small>
+		</p>
+		
+		<div class="word" id="word"></div>
+	</div>
+</div>
+
+</body>
+</html>
